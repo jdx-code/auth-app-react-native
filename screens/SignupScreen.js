@@ -17,8 +17,8 @@ function SignupScreen() {
       authCtx.authenticate(token);
     } catch (error) {
       Alert.alert('Sign up process failed', 'Check your input or try again later.');
-    }
-    setIsAuthenticating(false);
+      setIsAuthenticating(false);
+    }    
   }
 
   if(isAuthenticating) {
